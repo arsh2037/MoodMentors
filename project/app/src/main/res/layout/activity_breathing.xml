@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10sp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10sp"
+    android:paddingBottom="10dp"
+    tools:context=".Meditation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginStart="5dp"
+            android:contentDescription="back button"
+            app:backgroundTint="#36B8C9"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:focusable="true" />
+
+        <WebView
+            android:id="@+id/breathingVideo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How Does My Breathing Affect Me?"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:fontFamily="@font/abeezee" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="The primary role of breathing is to absorb oxygen and to expel carbon dioxide through the movement of the lungs. Muscles that control the movement of the lungs are the diaphragm (a sheet of muscle underneath the lungs) and the muscles between the ribs.\n\nWhen a person is under stress, their breathing pattern changes. Typically, an anxious person takes small, shallow breaths, using their shoulders rather than their diaphragm to move air in and out of their lungs. This style of breathing disrupts the balance of gases in the body.\n\nShallow over-breathing, or hyperventilation, can prolong feelings of anxiety by making the physical symptoms of stress worse. Controlling your breathing can help to improve some of these symptoms."
+                    />
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits of Deep Breathing"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:fontFamily="@font/abeezee"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="When a person is relaxed, they breathe through their nose in a slow, even and gentle way. Deliberately copying a relaxed breathing pattern seems to calm the nervous system that controls the body’s involuntary functions.\n\nControlled breathing can cause physiological changes that include:\n- lowered blood pressure and heart rate\n- reduced levels of stress hormones in the blood\n- reduced lactic acid build-up in muscle tissue\n- balanced levels of oxygen and carbon dioxide in the blood\n- improved immune system functioning\n- increased physical energy\n- increased feelings of calm and wellbeing.\n\nSource:https://www.betterhealth.vic.gov.au/health/healthyliving/breathing-to-reduce-stress#bhc-content"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

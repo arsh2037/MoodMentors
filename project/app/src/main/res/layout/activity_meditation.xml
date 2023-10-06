@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10sp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10sp"
+    android:paddingBottom="10dp"
+    tools:context=".Meditation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginStart="5dp"
+            android:contentDescription="back button"
+            app:backgroundTint="#36B8C9"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:focusable="true" />
+
+        <WebView
+            android:id="@+id/breathingVideo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is Meditation?"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:fontFamily="@font/abeezee" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Meditation has been practiced for thousands of years. Meditation originally was meant to help deepen understanding of the sacred and mystical forces of life. These days, meditation is commonly used for relaxation and stress reduction.\n\nMeditation is considered a type of mind-body complementary medicine. Meditation can produce a deep state of relaxation and a tranquil mind.\n\nDuring meditation, you focus your attention and eliminate the stream of jumbled thoughts that may be crowding your mind and causing stress. This process may result in enhanced physical and emotional well-being." />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits of Meditation"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:fontFamily="@font/abeezee"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Meditation can give you a sense of calm, peace and balance that can benefit both your emotional well-being and your overall health. You can also use it to relax and cope with stress by refocusing your attention on something calming. Meditation can help you learn to stay centered and keep inner peace.\n\nAnd these benefits don't end when your meditation session ends. Meditation can help carry you more calmly through your day. And meditation may help you manage symptoms of certain medical conditions." />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Meditation and Emotional and Physical Well-Being"
+                    android:textColor="#585958"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/alata" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="When you meditate, you may clear away the information overload that builds up every day and contributes to your stress.\n\nThe emotional and physical benefits of meditation can include:  \n\n- Gaining a new perspective on stressful situations\n- Building skills to manage your stress\n- Increasing self-awareness\n- Focusing on the present\n- Reducing negative emotions\n- Increasing imagination and creativity\n- Increasing patience and tolerance\n- Lowering resting heart rate\n- Lowering resting blood pressure\n- Improving sleep quality" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meditation and Illness"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#585958"
+                    android:textSize="17sp"
+                    app:fontFamily="@font/alata"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Meditation might also be useful if you have a medical condition, especially one that may be worsened by stress.\n\nWhile a growing body of scientific research supports the health benefits of meditation, some researchers believe it's not yet possible to draw conclusions about the possible benefits of meditation.\n\nWith that in mind, some research suggests that meditation may help people manage symptoms of conditions such as:\n\n- Anxiety\n- Asthma\n- Cancer\n- Chronic pain\n- Depression\n- Heart disease\n- High blood pressure\n- Irritable bowel syndrome\n- Sleep problems\n- Tension headaches\n\nBe sure to talk to your health care provider about the pros and cons of using meditation if you have any of these conditions or other health problems. In some rare cases, meditation might worsen symptoms associated with certain mental health conditions.\n\nMeditation isn't a replacement for traditional medical treatment. But it may be a useful addition to your other treatment.\n\nSource: https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

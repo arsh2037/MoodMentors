@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text2">How are you feeling today?</string>
+    <string name="text1">Greetings from MoodMentors!</string>
+    <string name="check_inB">CHECK IN</string>
+    <string name="bannerdescr">A drawing of a group of people sitting and talking, made with one continous line</string>
+    <string name="aiText">Speak Your Mind With AI</string>
+    <string name="text3">What would you like to do?</string>
+    <string name="meditationtxt">Practice Meditation</string>
+    <string name="mentaltxt">Learn About Mental Health</string>
+    <string name="breatingtxt">Practice Deep Breathing</string>
+    <string name="mentalDescr">A cartoon image of a man holding a cup in one hand and his other hand is on his forehead, in distress</string>
+    <string name="aiDescr">A cartoon image of a hand holding a phone with text message bubbles on it.</string>
+    <string name="meditationDescr">A girl sits cross-legged with her hands resting on her knees, in the meditation pose.</string>
+    <string name="breathingDescr">A cartoon man is inhaling. Next to this image is the same man, this time exhaling.</string>
+</resources>
